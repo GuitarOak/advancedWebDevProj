@@ -1,9 +1,29 @@
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.use(express.json());
+
+const storeRoutes = require('./routing.js'); 
+
+app.use('/api', storeRoutes);
+
+// Start the server
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+
+/*
 const express = require("express");
 const app = express();
 const port = 3000;
 const stores = require("./stores.json");
 const db = require('./db/database.js')
 app.use(express.json());
+
+const storeRoutes = require('./routing.js'); // Adjust the path to your routes file
+app.use('/api', storeRoutes);
+
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
@@ -50,3 +70,4 @@ app.post("/stores", (req, res) => {
 app.listen(port, () => {
   console.log(`listening at http://localhost:${port}`);
 });
+*/
