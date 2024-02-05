@@ -1,9 +1,9 @@
 const fs = require('fs');
 const mysql = require('mysql');
-const db = require('./db/database.js'); 
+const db = require('./database.js'); 
 
 const importData = () => {
-  fs.readFile('./stores.json', 'utf8', (err, data) => {
+  fs.readFile('../stores.json', 'utf8', (err, data) => {
     if (err) {
       console.error("Error reading file:", err);
       return;
