@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const stores = require("./stores.json");
+const db = require('./db/database.js')
 app.use(express.json());
 
 app.get("/", (req, res) => {
