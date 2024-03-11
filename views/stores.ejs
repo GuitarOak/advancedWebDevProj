@@ -21,9 +21,9 @@
                 <h2>
                     <%= store.name%>
                 </h2>
-                <p>
-                    <%= store.district%>
+                <p>District: <%= store.district ? store.district : 'N/A' %>
                 </p>
+                <a href="https:<%= store.url%>">To store</a>
             </div>
             <% }); %>
     </div>

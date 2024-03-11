@@ -1,26 +1,31 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2C4A70;
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 251);
 }
 
 .bg-image {
     background-image: url("jonkoping.jpg");
+ 
+     filter: blur(5px);
+    -webkit-filter: blur(5px);  
 
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-
-    height: 1080px;
-    width: 1920px;
+    height: 100vh;
+    width: 100vw;
 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 
 .index-container {
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0, 0.4);
-    color: white;
+    color: rgb(255, 255, 251);
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
@@ -28,9 +33,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 80%;
+    width: 50%;
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .index-container button{
@@ -40,13 +46,14 @@ body {
     padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 25px;
+    border-radius: 5px;
 }
 
 .index-container a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #000;
+    color: #1A2C43;
     text-decoration: none;
 }
 
@@ -61,11 +68,16 @@ body {
 }
 
 .grid-item {
-    background-color: rgb(252, 230, 255);
-
+    background-color: rgba(0,0,0, 0.4);
     padding-bottom: 25px;
     padding-left: 25px;
     padding-right: 25px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+.grid-item a {
+    color: #FFF;
+    
 }
 
 .to-top{
@@ -75,7 +87,7 @@ body {
     z-index: 3; 
     border: none; 
     outline: none; 
-    background-color: rgb(248, 195, 255); 
+    background-color: rgba(0,0,0, 0.4);
     color: white; 
     cursor: pointer; 
     padding: 15px; 
@@ -84,21 +96,22 @@ body {
   }
   
 .to-top:hover {
-    background-color: #555; 
+    background-color: rgba(0,0,0, 0.6);
   }
 .back-button{
-    background-color: black;
+    background-color: #fff;
     border: none;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 25px;
+    border-radius: 5px;
 }
 .back-button a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
     font-weight: 700;
-    color: #FFF;
+    color: #1A2C43;
     text-decoration: none;
 }
 
