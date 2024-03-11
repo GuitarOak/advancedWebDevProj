@@ -1,15 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <title>JÖNKÖPING STORES</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 
-<h1 class="title">Stores in Jönköping</h1>
-<div class="container">
-    <% stores.forEach(function(store) { %>
-        <div class="grid-item">
-            <h2>
-                <%= store.name%>
-            </h2>
-            <p><%= store.district%></p>
-        </div>
-        <% }); %>
-</div>
+<body>
+
+
+    <h1 class="title">Stores in Jönköping</h1>
+    <div class="grid-container">
+        <% stores.forEach(function(store) { %>
+            <div class="grid-item">
+                <h2>
+                    <%= store.name%>
+                </h2>
+                <p>
+                    <%= store.district%>
+                </p>
+            </div>
+            <% }); %>
+    </div>
+
+</body>
