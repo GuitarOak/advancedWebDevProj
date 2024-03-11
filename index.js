@@ -6,7 +6,9 @@ app.use(express.json());
 
 const storeRoutes = require('./routing.js'); 
 
-app.use('/api', storeRoutes);
+app.use(storeRoutes);
+app.set('view engine', 'ejs');
+
 
 // Start the server
 app.listen(port, () => {
