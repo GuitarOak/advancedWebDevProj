@@ -8,23 +8,13 @@
 </head>
 
 <body>
-
     <div class="hero">
         <h1 class="title">Stores in Jönköping</h1>
+        <button id='loadStoresButton' class="back-button">Load Stores</button>
         <button class="back-button"><a href="/">Back</a></button>
     </div>
-
     <button onclick="topFunction()" class="to-top">Top</button>
-    <div class="grid-container">
-        <% stores.forEach(function(store) { %>
-            <div class="grid-item">
-                <h2>
-                    <%= store.name%>
-                </h2>
-                <p>District: <%= store.district ? store.district : 'N/A' %>
-                </p>
-                <a href="https:<%= store.url%>">To store</a>
-            </div>
-            <% }); %>
+    <div id="storesList" class="grid-container">
+
     </div>
 </body>
