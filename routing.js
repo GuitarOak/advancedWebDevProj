@@ -7,6 +7,7 @@ const db = require('./db/database.js');
 router.get('/', (req, res) => {
     res.render('index')
 });
+
 router.get('/stores', (req, res) => {
     res.render('stores')
 });
