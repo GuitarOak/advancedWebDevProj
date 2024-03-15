@@ -1,0 +1,4 @@
+Navigate to root in terminal.
+In terminal: npm install
+In terminal: docker-compose up -d
+In browser, go to: localhost:3000 
